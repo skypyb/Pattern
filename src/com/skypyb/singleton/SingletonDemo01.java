@@ -2,7 +2,7 @@ package com.skypyb.singleton;
 
 /**
  * 测试饿汉式的单例模式
- * @author pyb www.yibobo..top
+ * @author pyb www.yibobo.top
  */
 public class SingletonDemo01 {
     //类初始化时，立即加载对象！由于加载类时线程是天然安全的
