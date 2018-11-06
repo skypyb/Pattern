@@ -6,15 +6,21 @@ import com.skypyb.state.homeState.FreeState;
 import com.skypyb.state.homeState.State;
 
 /**
- * 环境类，表示状态所处的环境
+ * 环境类，表示状态所处的环境，已初始化好所有的状态对象(public final 修饰，暴露给外部但不可变更)
+ *
+ * 外部调用者只需要操纵该类即可完成状态的变更，每当状态变更时其所维护的状态类都会动态改变，其细节对外隐藏
+ *
+ * @author pyb www.skypyb.com www.yibobo.top
  */
 public class Context {
 
     private State state;//所维护的状态
 
-    public static final BookedState BOOKED_STATE = new BookedState();
-    public static final CheckedinState CHECKEDIN_STATE = new CheckedinState();
-    public static final FreeState FREE_STATE = new FreeState();
+    public final BookedState bookedState = new BookedState();
+    public final CheckedinState checkedinState = new CheckedinState();
+    public final FreeState freeState = new FreeState();
+
+
 
     public State getState() {
         return state;
