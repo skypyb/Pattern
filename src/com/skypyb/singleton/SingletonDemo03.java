@@ -3,7 +3,7 @@ package com.skypyb.singleton;
 /**
  * 测试静态内部类式的单例模式
  * 这种方式线程安全、调用效率高且实现延时加载。需要延时加载时，静态内部类式好于懒汉式
- * @author pyb www.yibobo.top
+ * @author pyb www.skypyb.com
  */
 public class SingletonDemo03 {
 

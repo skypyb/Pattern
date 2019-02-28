@@ -2,7 +2,7 @@ package com.skypyb.singleton;
 
 /**
  * 测试懒汉式的单例模式
- * @author pyb www.yibobo.top
+ * @author pyb www.skypyb.com
  */
 public class SingletonDemo02 {
     //类初始化时，并不初始化对象，延时加载，真正要用的时候在加载
