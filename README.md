@@ -11,5 +11,6 @@
 * Template method模板方法模式  
 * State 状态模式  
 * Strategy 策略模式  
+* Observer 观察者模式  
 
 
